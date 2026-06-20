@@ -1,7 +1,8 @@
 """
 utils/reranker.py
 Re-ranks retrieved chunks against the query using Cohere's rerank API,
-and trims the candidate list down from top-20 to top-5 (or whatever you set).
+Cohere runs a transformer model.
+Internally it looks something like
 """
 
 import cohere
